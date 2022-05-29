@@ -143,7 +143,6 @@ header {
 #projet2,
 #projet3,#projet4, #projet5 {
   width: 100%;
-
   color: white;
   border: 1rem solid white;
   border-radius: 1rem;
@@ -155,7 +154,7 @@ header {
 
 #projet1:hover,
 #projet2:hover,
-#projet3:hover,#projet5:hover,
+#projet3:hover,#projet5:hover,#projet4:hover,
 .avatar:hover {
   background-color: blue;
 }
