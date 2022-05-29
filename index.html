@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Porte folio kriss</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+})();
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+
+
+<script>function toggleel() {
+
+
+    if (document.querySelector("header").classList.contains("hide") || document.querySelector("header").classList.contains("hidep")) {
+
+      document.querySelector("header").classList.remove("hide");
+
+      document.querySelector("header").classList.add("show");
+      console.log("aaa")
+    }
+    else {
+      console.log("bbb")
+      document.querySelector("header").classList.add("hide");
+      document.querySelector("header").classList.remove("show");
+    }
+    document.querySelector("header").classList.remove("hidep");
+
+  }
+</script>
+
+<body>
+  <div id="fond"></div>
+  <div id="headham">
+    <div onclick="toggleel()" id="divham"><i class="fas fa-bars"></i></div>
+    <header id="head" class="hidep" class="center">
+
+      <nav>
+        <ul>
+          <li class="bouge"><a href="#accueil">Accueil</a></li>
+          <li class="bouge"><a href="#projet">Projets</a></li>
+          <li class="bouge"><a href="#cv">CV</a></li>
+          <li class="bouge"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div>
+    <h1 class="titreDefil">Qualité : <span id="typed"></span></h1>
+  </div>
+
+  <main class="container_principal" id="accueil">
+
+    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge presentation">
+
+      <p>Je suis kriss CLOTILDE, développeur en reconversion.</br> Je suis disponible pour un CDI en javascript de
+        préférence front et back. </br> Je suis plus à l'aise en back même si je souhaite être avant tout
+        FullStack.</br></p>
+    </div>
+    <div class="bouge lion "><a target="_blank"
+        href="https://krissclotilde.com/wp-content/uploads/2021/03/CV_2020-12-10_Kriss_CLOTILDE_DeveloppeurFullstack.pdf">Cliquer
+        -->CV
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><img src="./asset/lion.png"
+            alt="mon cv gardé par mon avatar" /></div>
+      </a></div>
+
+      
+    <section class="center " id="quiSuisje">
+      <h1 id="titre_Text">Développeur Fullstack</h1>
+      <h2 id="prenom_Text">kriss clotilde</h2>
+      <a target="_blank" href="https://www.linkedin.com/in/kriss-clotilde/">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge avatar "><img
+            src="./asset/avatar-gratuit.png" /></div>
+      </a>
+
+      <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" id="PorteFolio">
+        <div>
+          <h3 class="center projeth3 " id="projet">Projets</h3>
+        </div>
+      </section>
+    </section>
+
+
+
+
+
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_secondaire">
+      <a target="_blank" href="https://bataillenavale.krissclotilde.com/">
+        <div id="projet1">
+
+          <div class="titre">
+            <h3>Bataille navale</h3>
+          </div>
+          <div class="bouge bateau">
+            <img src="./asset/bateau.png" />
+            <p>j'ai créé un site de jeu en réseau de bataille navale avec express js pour créer mon api et jquery pour
+              le
+              front ainsi que mysql comme base de donnée. J'ai hébergé le tout sur O2switch</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_tertiaire">
+      <a target="_blank" href="https://krissclotilde.com/">
+        <div id="projet2">
+          <div class="titre">
+            <h3>Site wordpress</h3>
+          </div>
+
+          <div class="bouge wordpress">
+            <img src="./asset/wordpress.png" alt="projet wordpress kriss" />
+            <p> J'ai créé mon site wordpress seul et je l'ai alimenté par mon expérience
+              et mes projets</p>
+          </div>
+      </a>
+    </div>
+    </div>
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_quaternaire">
+      <a target="_blank" href="https://github.com/lion92/Airbabouche/">
+        <div id="projet3">
+          <div class="java">
+            <h3>Compagnie aérienne</h3>
+          </div>
+          <div class="bouge wordpress">
+            <img src="./asset/java.png" alt="projet java kriss" />
+            <p> J'ai crée un projet swing java pour la gestion d'une compagnie aérienne.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_quintenaire">
+      <a target="_blank" href="https://todolist.krissdeveloppeur.com/">
+        <div id="projet4">
+
+          <div class="titre">
+            <h3>Todolist</h3>
+          </div>
+          <div class="bouge bateau">
+            <img src="./asset/todolist.png">
+            <p>J'ai créé une todolist avec un système d'authentification. Cela me permet de gérer mes taches et de mieux
+              m'organiser. Je compte ajouté d'autres fonctionnalités.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_cinq">
+      <a target="_blank" href="https://projet.krissclotilde.com//">
+        <div id="projet5">
+
+          <div class="titre">
+            <h3>Mon Portfolio</h3>
+          </div>
+          <div class="bouge bateau">
+            <img src="./asset/portfolio.png" />
+          </div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" id="cv" class="top-bar ">
+    <span class="page-info">
+      <span style="display:none" id="page-num"></span> <span style="display:none" id="page-count"></span>
+    </span>
+    <div id="divpdf "><canvas id="pdf-render"></canvas></div>
+
+  </div>
+  <div class="container_principal">
+    <section class="comp competence_section">
+      <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="competence ">
+        <h2>Compétences</h2>
+        <span>Java 70%</span><progress class="java" max="100" value="70"></progress>
+        <span>Javascript 70%</span><progress class="javascript" max="100" value="70"></progress>
+        <span>Express 70%</span><progress class="javascript" max="100" value="70"></progress>
+        <span>Jest 70%</span> <progress class="javascript" max="100" value="70"></progress>
+        <span>Mysql 70%</span> <progress class="javascript" max="100" value="70"></progress>
+        <span>React 60%</span> <progress class="javascript" max="100" value="60"></progress>
+        <span>Nest js 50%</span><progress class="javascript" max="100" value="50"></progress>
+        <span>Angular 50%</span>
+        <progress class="javascript" max="100" value="50"></progress>
+
+        <span>Hibernate 50%</span><progress class="javascript" max="100" value="50"></progress>
+        <span>Spring 50%</span> <progress class="javascript" max="100" value="50"></progress>
+
+      </div>
+    </section>
+    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="loisir competence ">
+      <h2>Loisirs</h2>
+      <article class="bouge ">
+        <p>Je joue aux cartes magic. C'est un jeu de carte à collectionner et à jouer. </p><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57sQXT0HaNbqW0THZWdBcTsI8D950g6YDgw&usqp=CAU"
+          alt="">
+      </article>
+      <article class="bouge ">
+        <p>Je joue au jeu de go qui est un jeu de stratégie asiatique.</p><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRT7lQ5-Sg2jwmfmSvVmeeEWRBCNVQqX3aQ&usqp=CAU"
+          alt="">
+      </article>
+    </section>
+
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="cont container ">
+      <h1>Formulaire de contact</h1>
+
+      <label for="emailAddress">Email</label>
+      <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+      <label for="subject">Message</label>
+      <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+<script type="text/javascript">
+     
+        emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+        function sendmail(){
+                        let temparams={
+                            from_name:document.getElementById("emailAddress").value,
+                            to_name:"site kriss",
+                            message:document.getElementById("subject").value
+                        }
+                        emailjs.send("service_9hsvs9k", "template_6e8w65r",temparams).then(function(res){
+                            console.log("success");
+                        });
+                    }
+        
+        </script>
+      <button onclick="sendmail()">Envoyer</button>
+
+    </div>
+  </div>
+
+  <footer data-aos="fade-up" data-aos-anchor-placement="center-bottom" id="contact">
+    <img class="copy" alt="copyright"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/All_rights_reserved_logo.svg/1200px-All_rights_reserved_logo.svg.png"></img>
+    &nbsp; kriss clotilde
+
+  </footer>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["Curieux", "Passionné", "Agile"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+      showCursor: true
+
+    })
+
+  </script>
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="js/main.js"></script>
+  <script src="three.min.js"></script>
+  <div>
+    <script src="fond.js"></script>
+  </div>
+  <script src="app.js"></script>
+  <script src="mail.js"></script>
+</body>
+
+<script>const context = { titre: "Développeur FullStack", prenom: "kriss", nom: "CLOTILDE" }
+  document.getElementById("titre_Text").innerHTML = context.titre;
+  document.getElementById("prenom_Text").innerHTML = context.prenom + " " + context.nom
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+</html>

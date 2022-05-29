@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
+ 
+* {
+  font-family: 'Martel Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+p {
+  color: white;
+}
+h3 {
+  color: violet;
+}
+h1 {
+  color: yellow;
+}
+h2 {
+  color: red;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.projeth3 {
+  font-size: 2em;
+  text-align: center;
+}
+header {
+  grid-column: 4;
+  font-size: 2rem;
+  background-color: cornflowerblue;
+}
+img {
+  width: 100%;
+
+  border-radius: 50%;
+}
+
+#divham i {
+  padding: 1em;
+  font-size: 1em;
+  text-align: center;
+  background-color: white;
+}
+.container_principal {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 1em;
+  margin: 1em;
+}
+#headham {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 1em;
+}
+
+#headham div {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 1;
+}
+
+header {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+header ul {
+  display: flex;
+  z-index: 7;
+  flex-wrap: wrap;
+}
+
+header ul li {
+  z-index: 8;
+}
+
+#quiSuisje {
+  text-align: center;
+
+  grid-column: 4;
+  grid-row: 1;
+}
+.container_secondaire {
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+}
+.container_tertiaire {
+  grid-column: 4;
+  grid-row: 3;
+  text-align: center;
+}
+.container_quaternaire {
+  grid-column: 6;
+  grid-row: 3;
+  text-align: center;
+}
+.container_cinq {
+  margin-top: 20px;
+  grid-column: 2;
+  grid-row: 4;
+  text-align: center;
+}
+.container_quintenaire {
+  grid-column: 4;
+  grid-row: 4;
+  text-align: center;
+  margin-top: 2em;
+}
+footer {
+  grid-column: 1;
+  grid-row: 5;
+  margin: 1rem;
+  padding: 1rem;
+  color: white;
+}
+footer img {
+  width: 1em;
+}
+header {
+  border-bottom: 0.1em solid black;
+}
+
+#projet1,
+#projet2,
+#projet3,#projet4, #projet5 {
+  width: 100%;
+
+  color: white;
+  border: 1rem solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  height: 100%;
+  
+}
+
+#projet1:hover,
+#projet2:hover,
+#projet3:hover,#projet5:hover,
+.avatar:hover {
+  background-color: blue;
+}
+
+button:hover {
+  background-color: lightpink;
+}
+canvas {
+  height: 100%;
+}
+body {
+  opacity: 1;
+}
+.trace {
+  opacity: 0;
+
+  transform: translateY(-70px);
+}
+.lion {
+  margin-top: 3em;
+  grid-column: 6;
+  grid-row: 1;
+  height: 100%;
+}
+.presentation {
+  margin-top: 3em;
+  grid-column: 2;
+  grid-row: 1;
+  height: 100%;
+  text-align: center;
+}
+#hamburger {
+  grid-column: 1;
+  grid-row: 1;
+}
+.hide {
+  display: none;
+}
+.reveal {
+  opacity: 1;
+
+  transform: translateY(0px);
+  transition: 2s;
+}
+button {
+  padding: 0.5em;
+}
+.competence {
+  margin-top: 2em;
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.competence article{
+  margin-bottom: 1em;
+}
+article {
+  position: relative; 
+  height: 15em;
+  width: 10em;
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+  background-color: black;
+  margin-right: 1em;
+}
+article img{
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+article p{margin-bottom: 2em;}
+.comp{
+  grid-column: 2;
+}
+.loisir{
+  grid-column: 6;
+}
+.cont{
+  grid-column-start: 3;
+  grid-column-end:6 ;
+  grid-row: 1;
+}
+header,
+h1,
+h2,
+h3,
+button,
+.projeth3 {
+  font-size: 3em;
+  text-align: center;
+}
+@media screen and (max-device-width: 640px), screen and (max-width: 700px) {
+
+  * {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  article {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid black;
+    background-color: black;
+    font-size: 1em;
+    margin-bottom: 1em;
+    position: relative;    
+  }
+  article p{
+    height: 100%;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  article img{
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+  }
+  .titreDefil {
+    font-size: 1em;
+  }
+  #typed,
+  .typed-cursor {
+    font-size: 1em;
+  }
+
+  #divham i {
+    padding: 1.5em;
+    font-size: 1em;
+  }
+  .hide {
+    display: none;
+  }
+  .hidep {
+    display: none;
+  }
+  .lion a {
+    font-size: 5em;
+  }
+  .container_principal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+  }
+  ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer img {
+    display: none;
+  }
+  p {
+    font-size: 4em;
+  }
+  header,
+  h1,
+  h2,
+  h3,
+  button,
+  .projeth3 {
+    font-size: 1em;
+    text-align: center;
+  }
+  footer {
+    font-size: 4em;
+  }
+  #projet1,
+  #projet2,
+  #projet3,
+  .avatar {
+    width: 100%;
+
+    color: white;
+    border: 1rem solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  span,p,h2,h1,.projeth3,h3,h4,a, article p{
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 2em;
+  }
+  h1{
+    color:red
+  }
+  a,.titreDefil,#typed{
+    font-size: 1em;
+  }
+}
+/* //////////////////////////////////////////////
+Plus d'informations liées à la solution  : 
+//////////////////////////////////////////////
+
+https://www.zonecss.fr/faq/description-d-un-element.html#specifier-la-taille-d-un-element-grace-aux-feuilles-de-style-css
+
+https://www.zonecss.fr/proprietes-css/box-sizing-css.html#WJwJqZ00000.codepen
+*/
+body {
+  font-family: 'Martel Sans', sans-serif;
+  padding: 0px;
+}
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #1255a2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1872d9;
+}
+
+.container {
+  /* Ajouter box-sizing */
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+  /* redéfinition 400 + 2*20 */
+  max-width: 440px;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+h1 {
+  color: #ffc800;
+  width: 100%;
+  font-size: 2em;
+}
+
+#divpdf {
+}
+#pdf-render {
+  position: unset;
+  width: 100%;
+  height: 100%;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes bouge {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
+.bouge:hover {
+  animation-name: bouge;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+html{
+  background-color: black;
+}
+span{color:white}
