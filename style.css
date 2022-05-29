@@ -353,6 +353,9 @@ button,
   a,.titreDefil,#typed{
     font-size: 1em;
   }
+  li a{
+    font-size: 3em;
+  }
 }
 /* //////////////////////////////////////////////
 Plus d'informations liées à la solution  : 
@@ -500,3 +503,6 @@ html{
   background-color: black;
 }
 span{color:white}
+#FormContact{
+  color: dodgerblue;
+}
