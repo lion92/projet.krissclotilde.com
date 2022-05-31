@@ -148,7 +148,7 @@ header {
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
-  height: 100%;
+  height:50em;
   
 }
 
@@ -249,8 +249,27 @@ button,
 .projeth3 {
   font-size: 3em;
   text-align: center;
+
 }
+footer{
+   font-size: 4em;
+ }
 @media screen and (max-device-width: 640px), screen and (max-width: 700px) {
+  footer{
+    font-size: 2em;
+  }
+  #projet1,
+  #projet2,
+  #projet3,#projet4, #projet5 {
+    width: 100%;
+    color: white;
+    border: 1rem solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    height:75em;
+
+  }
 
   * {
     margin: 0;
@@ -412,7 +431,7 @@ input[type="submit"]:hover {
   padding: 20px;
   width: 100%;
   /* redéfinition 400 + 2*20 */
-  max-width: 440px;
+  max-width: 30em;
   margin: 0 auto;
   margin-top: 2em;
 }
@@ -505,7 +524,5 @@ html{
 span{color:white}
 #FormContact{
   color: dodgerblue;
-}
-footer{
-  font-size: 3em;
+  max-width: 30em;
 }
