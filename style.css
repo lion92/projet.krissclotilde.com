@@ -237,9 +237,9 @@ article p{margin-bottom: 2em;}
   grid-column: 6;
 }
 .cont{
-  grid-column-start: 3;
-  grid-column-end:6 ;
-  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end:8 ;
+  grid-row: 2;
 }
 header,
 h1,
