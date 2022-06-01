@@ -264,7 +264,7 @@ button,
 footer{
    font-size: 4em;
  }
-@media screen and (max-device-width: 640px), screen and (max-width: 700px) {
+@media screen and (max-device-width: 400px), screen and (max-width: 1000px) {
   footer{
     font-size: 2em;
   }
