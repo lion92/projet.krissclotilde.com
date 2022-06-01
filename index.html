@@ -89,8 +89,84 @@ emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
         <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge avatar "><img
             src="./asset/avatar-gratuit.png" /></div>
       </a>
+      <button onclick="toggleAffiche()" class="btn-31">
+    <span class="text-container">
+      <span class="text">Afficher la description</span>
+    </span>
+      </button>
+      <style>
+        .btn-31 {
+          display: block;
+          box-sizing: border-box;
+          padding: 1.5rem 3.5rem;
 
-      <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" id="PorteFolio">
+          position: relative;
+
+          background: none;
+          color: white;
+
+          text-transform: uppercase;
+          border: 1px solid currentColor;
+
+          --progress: 100%;
+
+        }
+
+        .btn-31:before {
+          content: "";
+          z-index: -1;
+
+          position: absolute;
+          inset: 0;
+
+
+          background: white;
+          clip-path: polygon(
+                  100% 0,
+                  var(--progress) var(--progress),
+                  0 100%,
+                  100% 100%
+          );
+          transition: clip-path 0.2s;
+        }
+        .btn-31:hover {
+          --progress: 0%;
+        }
+
+        .btn-31 .text-container {
+          display: block;
+          position: relative;
+          overflow: hidden;
+        }
+        .btn-31 .text {
+          display: block;
+          position: relative;
+          font-size: 1rem;
+          font-weight: 900;
+          mix-blend-mode: difference;
+        }
+        .btn-31:hover .text {
+          animation: move-up-alternate 0.3s forwards;
+          will-change: transform;
+        }
+
+        @keyframes move-up-alternate {
+          from {
+            transform: translateY(0%);
+          }
+          50% {
+            transform: translateY(80%);
+          }
+          51% {
+            transform: translateY(-80%);
+          }
+          100% {
+            transform: translateY(0%);
+          }
+        }
+      </style>
+
+      <section  id="PorteFolio">
         <div>
           <h3 class="center projeth3 " id="projet">Projets</h3>
         </div>
@@ -101,7 +177,8 @@ emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
 
 
 
-    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_secondaire">
+    <div  class="container_secondaire">
+
       <a target="_blank" href="https://bataillenavale.krissclotilde.com/">
         <div id="projet1">
 
@@ -110,14 +187,18 @@ emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
           </div>
           <div class="bouge bateau">
             <img src="./asset/bateau.png" />
-            <p>j'ai créé un site de jeu en réseau de bataille navale avec express js pour créer mon api et jquery pour
+
+            <p class="affiche">j'ai créé un site de jeu en réseau de bataille navale avec express js pour créer mon api et jquery pour
               le
               front ainsi que mysql comme base de donnée. J'ai hébergé le tout sur O2switch</p>
           </div>
         </div>
       </a>
+
     </div>
-    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_tertiaire">
+
+    <div class="container_tertiaire">
+
       <a target="_blank" href="https://krissclotilde.com/">
         <div id="projet2">
           <div class="titre">
@@ -126,12 +207,15 @@ emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
 
           <div class="bouge wordpress">
             <img src="./asset/wordpress.png" alt="projet wordpress kriss" />
-            <p> J'ai créé mon site internet</p>
+
+            <p class="affiche"> J'ai créé mon site internet</p>
           </div>
       </a>
+
     </div>
     </div>
-    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_quaternaire">
+    <div  class="container_quaternaire">
+
       <a target="_blank" href="https://github.com/lion92/Airbabouche/">
         <div id="projet3">
           <div class="java">
@@ -139,12 +223,16 @@ emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
           </div>
           <div class="bouge wordpress">
             <img src="./asset/java.png" alt="projet java kriss" />
-            <p> J'ai crée un projet swing java pour la gestion d'une compagnie aérienne.</p>
+
+            <p class="affiche"> J'ai crée un projet swing java pour la gestion d'une compagnie aérienne.</p>
           </div>
         </div>
+
       </a>
+
     </div>
-    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="container_quintenaire">
+    <div  class="container_quintenaire">
+
       <a target="_blank" href="https://todolist.krissdeveloppeur.com/">
         <div id="projet4">
 
@@ -153,12 +241,13 @@ emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
           </div>
           <div class="bouge bateau">
             <img src="./asset/todolist.png">
-            <p>J'ai créé une todolist avec un système d'authentification. Cela me permet de gérer mes taches et de mieux
+
+            <p class="affiche">J'ai créé une todolist avec un système d'authentification. Cela me permet de gérer mes taches et de mieux
               m'organiser. Je compte ajouté d'autres fonctionnalités.</p>
           </div>
         </div>
       </a>
-    </div>
+        </div>
 
   </main>
 
@@ -210,7 +299,13 @@ emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
       <label for="subject">Message</label>
       <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
 <script type="text/javascript">
-     
+
+
+     function toggleAffiche(){
+       for (let elementsByClassNameElement of document.getElementsByClassName("affiche")) {
+         elementsByClassNameElement.classList.toggle("afficheYes");
+       }
+     }
         emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
         function sendmail(){
                         let temparams={

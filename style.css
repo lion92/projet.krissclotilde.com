@@ -11,7 +11,16 @@
   list-style: none;
   
 }
-
+.afficheButton{
+  font-size: 1em;
+  font-family: 'Martel Sans', sans-serif;
+}
+.affiche{
+  display: none;
+}
+.afficheYes{
+  display: block;
+}
 canvas {
   position: absolute;
   top: 0;
@@ -160,7 +169,7 @@ header {
 }
 
 button:hover {
-  background-color: lightpink;
+  background-color: lightblue;
 }
 canvas {
   height: 100%;
