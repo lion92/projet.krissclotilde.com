@@ -11,6 +11,7 @@
   list-style: none;
   
 }
+
 .afficheButton{
   font-size: 1em;
   font-family: 'Martel Sans', sans-serif;
@@ -157,7 +158,7 @@ header {
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
-  height:50em;
+  height:100%;
   
 }
 
@@ -256,7 +257,7 @@ h2,
 h3,
 button,
 .projeth3 {
-  font-size: 3em;
+  font-size: 1em;
   text-align: center;
 
 }
@@ -270,7 +271,7 @@ footer{
   #projet1,
   #projet2,
   #projet3,#projet4, #projet5 {
-    width: 100%;
+    width: 400px;
     color: white;
     border: 1rem solid white;
     border-radius: 1rem;
@@ -358,22 +359,11 @@ footer{
   footer {
     font-size: 4em;
   }
-  #projet1,
-  #projet2,
-  #projet3,
-  .avatar {
-    width: 100%;
 
-    color: white;
-    border: 1rem solid white;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
   span,p,h2,h1,.projeth3,h3,h4,a, article p{
     color: white;
     font-family: 'Martel Sans', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
   }
   h1{
     color:red
@@ -401,7 +391,7 @@ body {
 input[type="text"],
 textarea,
 input[type="email"] {
-  width: 100%;
+  width:100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
