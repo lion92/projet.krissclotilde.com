@@ -109,35 +109,40 @@ header ul li {
   grid-row: 1;
 }
 .container_secondaire {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 3;
   text-align: center;
+  margin-bottom: 2em;
 }
 .container_tertiaire {
-  grid-column: 4;
+  grid-column: 5;
   grid-row: 3;
   text-align: center;
+  margin-bottom: 2em;
 }
 .container_quaternaire {
-  grid-column: 6;
-  grid-row: 3;
+  grid-column: 3;
+  grid-row: 4;
   text-align: center;
+  margin-bottom: 2em;
 }
 .container_cinq {
   margin-top: 20px;
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 4;
   text-align: center;
+  margin-bottom: 2em;
 }
 .container_quintenaire {
-  grid-column: 4;
+  grid-column: 5;
   grid-row: 4;
   text-align: center;
-  margin-top: 2em;
+  margin-bottom: 2em;
+
 }
 footer {
   grid-column: 1;
-  grid-row: 5;
+  grid-row: 6;
   margin: 1rem;
   padding: 1rem;
   color: white;
@@ -157,8 +162,9 @@ header {
   border: 1rem solid white;
   border-radius: 1rem;
   padding: 1rem;
-  margin-bottom: 2rem;
+
   height:100%;
+  margin-bottom: 2em;
   
 }
 
