@@ -54,7 +54,7 @@ header ul {
 header {
   grid-column: 4;
   font-size: 2rem;
-  background-color: cornflowerblue;
+  background-color: white;
 }
 img {
   width: 100%;
@@ -172,7 +172,7 @@ header {
 #projet2:hover,
 #projet3:hover,#projet5:hover,#projet4:hover,
 .avatar:hover {
-  background-color: blue;
+  background-color: white;
 }
 
 button:hover {
