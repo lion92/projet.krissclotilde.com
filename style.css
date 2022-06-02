@@ -247,10 +247,10 @@ article img{
 }
 article p{margin-bottom: 2em;}
 .comp{
-  grid-column: 2;
+  grid-column: 3;
 }
 .loisir{
-  grid-column: 6;
+  grid-column: 5;
 }
 .cont{
   grid-column-start: 1;
@@ -268,7 +268,7 @@ button,
 
 }
 footer{
-   font-size: 4em;
+   font-size: 2em;
  }
 @media screen and (max-device-width: 400px), screen and (max-width: 1000px) {
   footer{
@@ -363,7 +363,7 @@ footer{
     text-align: center;
   }
   footer {
-    font-size: 4em;
+    font-size: 2em;
   }
 
   span,p,h2,h1,.projeth3,h3,h4,a, article p{
