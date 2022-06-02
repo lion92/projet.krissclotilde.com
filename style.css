@@ -168,12 +168,7 @@ header {
   
 }
 
-#projet1:hover,
-#projet2:hover,
-#projet3:hover,#projet5:hover,#projet4:hover,
-.avatar:hover {
-  background-color: white;
-}
+
 
 button:hover {
   background-color: lightblue;
@@ -191,10 +186,13 @@ body {
 }
 .lion {
   margin-top: 3em;
-  grid-column: 6;
+  grid-column: 5;
   grid-row: 1;
-  height: 100%;
+  width: 10em;
+
+
 }
+
 .presentation {
   margin-top: 3em;
   grid-column: 2;
@@ -297,6 +295,7 @@ footer{
 
   }
 
+
   * {
     margin: 0;
     padding: 1rem;
@@ -343,7 +342,11 @@ footer{
     display: none;
   }
   .lion a {
-    font-size: 5em;
+    font-size: 2em;
+
+  }
+  .lion a:hover{
+   background-color: #ffc800;
   }
   .container_principal {
     display: flex;
@@ -376,7 +379,7 @@ footer{
     font-size: 2em;
   }
 
-  span,p,h2,h1,.projeth3,h3,h4,a, article p{
+  span,p,h2,h1,.projeth3,h3,h4, article p{
     color: white;
     font-family: 'Martel Sans', sans-serif;
     font-size: 1em;
@@ -389,7 +392,12 @@ footer{
   }
   li a{
     font-size: 3em;
+
   }
+  li a:hover{
+    background-color: #ffc800;
+  }
+
   .lion a{
     color: white;
   }
