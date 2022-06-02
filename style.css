@@ -274,6 +274,9 @@ footer{
 .lion a{
   color: white;
 }
+li a:hover{
+  background-color: #ffc800;
+}
 @media screen and (max-device-width: 400px), screen and (max-width: 1000px) {
   footer{
     font-size: 2em;
