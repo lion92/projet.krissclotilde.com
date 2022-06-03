@@ -246,12 +246,14 @@ article img{
 article p{margin-bottom: 2em;}
 .comp{
   grid-column: 3;
+  font-size: 2em;
 }
 .loisir{
   grid-column: 5;
+  font-size: 2em;
 }
 #projet{
-  font-size: 3em;
+  font-size: 2em;
 }
 .cont{
   grid-column-start: 1;
@@ -273,6 +275,10 @@ footer{
  }
 .lion a{
   color: white;
+
+}
+header{
+  font-size: 3em;
 }
 li a:hover{
   background-color: #ffc800;
@@ -367,18 +373,7 @@ li a:hover{
   p {
     font-size: 4em;
   }
-  header,
-  h1,
-  h2,
-  h3,
-  button,
-  .projeth3 {
-    font-size: 1em;
-    text-align: center;
-  }
-  footer {
-    font-size: 2em;
-  }
+
 
   span,p,h2,h1,.projeth3,h3,h4, article p{
     color: white;
@@ -401,6 +396,9 @@ li a:hover{
 
   .lion a{
     color: white;
+  }
+  header{
+    font-size: 2em;
   }
 }
 /* //////////////////////////////////////////////
