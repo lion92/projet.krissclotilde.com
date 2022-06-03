@@ -1,17 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
-
 * {
-
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  
 }
-
 .afficheButton{
   font-size: 1em;
   font-family: 'Martel Sans', sans-serif;
@@ -27,7 +23,6 @@ canvas {
   top: 0;
   left: 0;
   z-index: -1;
-
 }
 p {
   color: white;
@@ -41,7 +36,6 @@ h1 {
 h2 {
   color: red;
 }
-
 header ul {
   display: flex;
   flex-wrap: wrap;
@@ -59,10 +53,8 @@ header {
 }
 img {
   width: 100%;
-
   border-radius: 50%;
 }
-
 #divham i {
   padding: 1em;
   font-size: 1em;
@@ -80,32 +72,26 @@ img {
   grid-template-columns: repeat(7, 1fr);
   margin-top: 1em;
 }
-
 #headham div {
   grid-row: 1;
   grid-column: 1;
   z-index: 1;
 }
-
 header {
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 8;
 }
-
 header ul {
   display: flex;
   z-index: 7;
   flex-wrap: wrap;
 }
-
 header ul li {
   z-index: 8;
 }
-
 #quiSuisje {
   text-align: center;
-
   grid-column: 4;
   grid-row: 1;
 }
@@ -139,7 +125,6 @@ header ul li {
   grid-row: 4;
   text-align: center;
   margin-bottom: 2em;
-
 }
 footer {
   grid-column: 1;
@@ -153,26 +138,17 @@ footer img {
 }
 header {
   border-bottom: 0.1em solid black;
-
 }
-
-#projet1,
-#projet2,
-#projet3,#projet4, #projet5 {
+#projet1,#projet2,#projet3,#projet4, #projet5 {
   width: 20em;
   color: white;
   border: 1rem solid white;
   border-radius: 1rem;
   padding: 1rem;
-
   height:100%;
   margin-bottom: 2em;
   font-family: "Comic Sans MS";
-  
 }
-
-
-
 button:hover {
   background-color: lightblue;
 }
@@ -184,7 +160,6 @@ body {
 }
 .trace {
   opacity: 0;
-
   transform: translateY(-70px);
 }
 .lion {
@@ -192,10 +167,7 @@ body {
   grid-column: 5;
   grid-row: 1;
   width: 10em;
-
-
 }
-
 .presentation {
   margin-top: 3em;
   grid-column: 2;
@@ -212,7 +184,6 @@ body {
 }
 .reveal {
   opacity: 1;
-
   transform: translateY(0px);
   transition: 2s;
 }
@@ -222,17 +193,16 @@ button {
 .competence {
   margin-top: 2em;
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
 .competence article{
   margin-bottom: 1em;
 }
 article {
-  position: relative; 
+  position: relative;
   height: 15em;
   width: 10em;
   text-align: center;
@@ -246,7 +216,9 @@ article img{
   bottom: 0;
   left:0;
 }
-article p{margin-bottom: 2em;}
+article p{
+  margin-bottom: 2em;
+}
 .comp{
   grid-column: 3;
   font-size: 2em;
@@ -263,22 +235,15 @@ article p{margin-bottom: 2em;}
   grid-column-end:8 ;
   grid-row: 2;
 }
-header,
-h1,
-h2,
-h3,
-button,
-.projeth3 {
+header,h1,h2,h3,button,.projeth3 {
   font-size: 1em;
   text-align: center;
-
 }
 footer{
-   font-size: 2em;
- }
+  font-size: 2em;
+}
 .lion a{
   color: white;
-
 }
 header{
   font-size: 3em;
@@ -291,13 +256,10 @@ li a:hover{
   footer{
     font-size: 2em;
   }
-
   #projet{
     font-size: 3em;
   }
-  #projet1,
-  #projet2,
-  #projet3,#projet4, #projet5 {
+  #projet1,#projet2,#projet3,#projet4, #projet5 {
     width: 400px;
     color: white;
     border: 1rem solid white;
@@ -305,10 +267,7 @@ li a:hover{
     padding: 1em;
     margin-bottom: 2em;
     height:100%;
-
   }
-
-
   * {
     margin: 0;
     padding: 1rem;
@@ -323,7 +282,7 @@ li a:hover{
     background-color: black;
     font-size: 1em;
     margin-bottom: 1em;
-    position: relative;    
+    position: relative;
   }
   article p{
     height: 100%;
@@ -339,25 +298,21 @@ li a:hover{
   .titreDefil {
     font-size: 1em;
   }
-  #typed,
-  .typed-cursor {
+  #typed,.typed-cursor {
     font-size: 1em;
   }
-
   #divham i {
     padding: 1.5em;
     font-size: 1em;
   }
-
   .hidep {
     display: none;
   }
   .lion a {
     font-size: 2em;
-
   }
   .lion a:hover{
-   background-color: #ffc800;
+    background-color: #ffc800;
   }
   .container_principal {
     display: flex;
@@ -377,8 +332,6 @@ li a:hover{
   p {
     font-size: 4em;
   }
-
-
   span,p,h2,h1,.projeth3,h3,h4, article p{
     color: white;
     font-family: 'Martel Sans', sans-serif;
@@ -392,12 +345,10 @@ li a:hover{
   }
   li a{
     font-size: 1em;
-
   }
   li a:hover{
     background-color: #ffc800;
   }
-
   .lion a{
     color: white;
   }
@@ -405,22 +356,12 @@ li a:hover{
     font-size: 2em;
   }
 }
-/* //////////////////////////////////////////////
-Plus d'informations liées à la solution  : 
-//////////////////////////////////////////////
-
-https://www.zonecss.fr/faq/description-d-un-element.html#specifier-la-taille-d-un-element-grace-aux-feuilles-de-style-css
-
-https://www.zonecss.fr/proprietes-css/box-sizing-css.html#WJwJqZ00000.codepen
-*/
+/* //////////////////////////////////////////////Plus d'informations liées à la solution ://////////////////////////////////////////////https://www.zonecss.fr/faq/description-d-un-element.html#specifier-la-taille-d-un-element-grace-aux-feuilles-de-style-csshttps://www.zonecss.fr/proprietes-css/box-sizing-css.html#WJwJqZ00000.codepen*/
 body {
   font-family: 'Martel Sans', sans-serif;
   padding: 0px;
 }
-
-input[type="text"],
-textarea,
-input[type="email"] {
+input[type="text"],textarea,input[type="email"] {
   width:100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -438,7 +379,6 @@ label {
   width: 100%;
   font-size: 1em;
 }
-
 input[type="submit"] {
   background-color: #1255a2;
   color: white;
@@ -447,11 +387,9 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type="submit"]:hover {
   background-color: #1872d9;
 }
-
 .container {
   /* Ajouter box-sizing */
   box-sizing: border-box;
@@ -469,7 +407,6 @@ h1 {
   width: 100%;
   font-size: 2em;
 }
-
 #divpdf {
 }
 #pdf-render {
@@ -477,7 +414,6 @@ h1 {
   width: 100%;
   height: 100%;
 }
-
 .top-bar {
   display: flex;
   flex-wrap: wrap;
@@ -485,7 +421,6 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
-
 @keyframes bouge {
   16.65% {
     -webkit-transform: skew(-12deg);
@@ -536,7 +471,6 @@ h1 {
     transform: skew(0);
   }
 }
-
 .bouge:hover {
   animation-name: bouge;
   -webkit-animation-duration: 1s;
@@ -546,11 +480,12 @@ h1 {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-
 html{
   background-color: black;
 }
-span{color:white}
+span{
+  color:white
+}
 #FormContact{
   color: dodgerblue;
   max-width: 30em;
