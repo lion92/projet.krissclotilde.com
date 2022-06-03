@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
@@ -329,16 +329,25 @@
             }
 
             emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+            function validMail(mail)
+            {
+                return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(mail);
+            }
 
             function sendmail() {
-                let temparams = {
-                    from_name: document.getElementById("emailAddress").value,
-                    to_name: "site kriss",
-                    message: document.getElementById("subject").value
+                if(!validMail(document.getElementById("emailAddress").value)){
+                    alert("Email Invalid")
+                }else {
+                    let temparams = {
+                        from_name: document.getElementById("emailAddress").value,
+                        to_name: "site kriss",
+                        message: document.getElementById("subject").value
+                    }
+                    emailjs.send("service_9hsvs9k", "template_6e8w65r", temparams).then(function (res) {
+                        alert("Message envoyé Merci!!");
+                    });
                 }
-                emailjs.send("service_9hsvs9k", "template_6e8w65r", temparams).then(function (res) {
-                    alert("Message envoyé Merci!!");
-                });
+
             }
 
         </script>
