@@ -11,6 +11,14 @@ function init() {
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
+  var selectElem = document.getElementById('vitesse');
+  // Quand une nouvelle <option> est selectionnée
+  selectElem.addEventListener('change', function() {
+    var index = selectElem.selectedIndex;
+    // Rapporter cette donnée au <p>
+
+    location.reload();
+  })
 
   starGeo = new THREE.Geometry();
   for(let i=0;i<6000;i++) {
@@ -20,9 +28,13 @@ function init() {
       Math.random() * 600 - 300
     );
     star.velocity = 0;
-    star.acceleration = 0.07;
+    star.acceleration = selectElem.selectedIndex;
     starGeo.vertices.push(star);
   }
+
+
+
+
 
   let sprite = new THREE.TextureLoader().load( './asset/star.png' );
   let starMaterial = new THREE.PointsMaterial({
