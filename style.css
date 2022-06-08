@@ -8,16 +8,14 @@
   text-decoration: none;
   list-style: none;
 }
+.titre{
+  margin-bottom: 0.5em;
+}
 .afficheButton{
   font-size: 1em;
   font-family: 'Martel Sans', sans-serif;
 }
-.affiche{
-  display: none;
-}
-.afficheYes{
-  display: block;
-}
+
 canvas {
   position: absolute;
   top: 0;
