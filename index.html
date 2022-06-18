@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Portfolio kriss</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-                                           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
 <script>function toggleel() {
 
 
-    if (document.querySelector("header").classList.contains("hide") ) {
+    if (document.querySelector("header").classList.contains("hide")) {
 
         document.querySelector("header").classList.remove("hide");
 
@@ -63,15 +63,15 @@
             </ul>
         </nav>
         <div>
-        <label for="vitesse">Vitesse</label>
-        <div class="center"> <select id="vitesse">
-            <option value="1">0.002</option>
-            <option value="2">0.005</option>
-            <option value="3">0.009</option>
-            <option value="4">0.095</option>
-            <option value="5">0.1</option>
-        </select></div>
-    </div>
+            <label for="vitesse">Vitesse</label>
+            <div class="center"><select id="vitesse">
+                <option value="1">0.002</option>
+                <option value="2">0.005</option>
+                <option value="3">0.009</option>
+                <option value="4">0.095</option>
+                <option value="5">0.1</option>
+            </select></div>
+        </div>
     </header>
 </div>
 
@@ -182,7 +182,7 @@
 
         <section id="PorteFolio">
 
-                <h3 class="center projeth3" id="projet">Projets</h3>
+            <h3 class="center projeth3" id="projet">Projets</h3>
         </section>
     </section>
 
@@ -275,7 +275,7 @@
                     <img src="./asset/tondeuse.png">
 
                     <p class="affiche">J'ai fait un kata tondeuse pour un entretien voici le code.
-                        Il s'agit de faire bouger séquentiellement plusieurs tondueses sur une pelouse.</p>
+                        Il s'agit de faire bouger séquentiellement plusieurs tondeuses sur une pelouse.</p>
                 </div>
             </div>
         </a>
@@ -293,7 +293,7 @@
                     <img src="./asset/mars.png">
 
                     <p class="affiche">J'ai fait un kata Mars Rover pour un entretien voici le code.
-                        </p>
+                    </p>
                 </div>
             </div>
         </a>
@@ -368,15 +368,15 @@
             }
 
             emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
-            function validMail(mail)
-            {
+
+            function validMail(mail) {
                 return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(mail);
             }
 
             function sendmail() {
-                if(!validMail(document.getElementById("emailAddress").value)){
+                if (!validMail(document.getElementById("emailAddress").value)) {
                     alert("Email Invalid")
-                }else {
+                } else {
                     let temparams = {
                         from_name: document.getElementById("emailAddress").value,
                         to_name: "site kriss",
