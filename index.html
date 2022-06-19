@@ -23,6 +23,7 @@
         })();
     </script>
 
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -78,7 +79,7 @@
 
 <main class="container_principal" id="accueil">
 
-    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge presentation">
+    <div  class="bouge presentation">
 
         <p>Je suis kriss CLOTILDE, développeur en reconversion.</br> Je suis disponible pour une mission en java ou
             javascript.</br> J'aime le craft et les bonnes pratiques de programmations.<br>
@@ -93,7 +94,7 @@
         <h1 id="titre_Text">Développeur Fullstack</h1>
         <h2 id="prenom_Text">kriss clotilde</h2>
         <a target="_blank" href="https://www.linkedin.com/in/kriss-clotilde/">
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge avatar ">
+            <div class="bouge avatar ">
                 <img
                         src="./asset/avatar-gratuit.png"/></div>
         </a>
@@ -305,7 +306,7 @@
 </div>
 <div class="container_principal">
     <section class="comp competence_section">
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="competence ">
+        <div class="competence ">
             <h2>Compétences</h2>
             <span>Java 70%</span>
             <progress class="java" max="100" value="70"></progress>
@@ -328,7 +329,7 @@
             <progress class="javascript" max="100" value="40"></progress>
         </div>
     </section>
-    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="loisir competence ">
+    <section  class="loisir competence ">
         <h2>Loisirs</h2>
         <article class="bouge ">
             <p>Je joue aux cartes magic. C'est un jeu de carte à collectionner et à jouer. </p><img
@@ -354,11 +355,7 @@
         <script type="text/javascript">
 
 
-            function toggleAffiche() {
-                for (let elementsByClassNameElement of document.getElementsByClassName("affiche")) {
-                    elementsByClassNameElement.classList.toggle("afficheYes");
-                }
-            }
+
 
             emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
 
@@ -395,6 +392,8 @@
     &nbsp; kriss clotilde
     <a href="https://github.com/lion92" alt="Git hub de kriss">GitHub de kriss</a>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
 <script>
     var typed = new Typed('#typed', {
         strings: ["Curieux", "Passionné", "Agile"],
@@ -404,6 +403,8 @@
         showCursor: true
 
     })
+//Aniamtion debut
+    gsap.timeline(gsap.from("div", {duration: 1.5, y: "+=500",opacity:0, stagger:0.1}));
 
 </script>
 <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
