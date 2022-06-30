@@ -618,13 +618,16 @@ select {
     position: absolute;
 
     width: 4px;
-    height: 100px;
+    height: 100%;
     background-color: #1d6ebf;
 
     left: 23px;
     top: 50px;
     transform: translateX(-50%);
+
 }
+
+
 
 .timeline-status {
     height: 46px;
