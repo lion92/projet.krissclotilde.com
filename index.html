@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="asset/avatar-gratuit.png"/>
     <title>Portfolio kriss</title>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-                                           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -14,12 +16,14 @@
 
     <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
-        })();
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+
+
+    (function () {
+    emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+    })();
     </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -32,7 +36,7 @@
 <script>function toggleel() {
 
 
-    if (document.querySelector("header").classList.contains("hide") ) {
+    if (document.querySelector("header").classList.contains("hide")) {
 
         document.querySelector("header").classList.remove("hide");
 
@@ -49,11 +53,13 @@
 </script>
 
 <body>
+
 <div id="fond"></div>
 <div id="headham">
     <div onclick="toggleel()" id="divham"><i class="fas fa-bars"></i></div>
     <header id="head" class="hidep" class="center">
         <h1 class="titreDefil">Qualité : <span style="color: black" id="typed"></span></h1>
+        <H2 id="counter"></H2>
         <nav>
             <ul>
                 <li class="bouge"><a href="#accueil">Accueil</a></li>
@@ -63,44 +69,53 @@
             </ul>
         </nav>
         <div>
-        <label for="vitesse">Vitesse</label>
-        <div class="center"> <select id="vitesse">
-            <option value="1">0.002</option>
-            <option value="2">0.005</option>
-            <option value="3">0.009</option>
-            <option value="4">0.095</option>
-            <option value="5">0.1</option>
-        </select></div>
-    </div>
+            <label for="vitesse">Vitesse</label>
+            <div class="center"><select id="vitesse">
+                <option value="0.007">lent</option>
+                <option value="0.0075">moins lent</option>
+                <option value="0.1">rapide</option>
+            </select></div>
+        </div>
     </header>
+
 </div>
 
 
 <main class="container_principal" id="accueil">
 
-    <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge presentation">
 
-        <p>Je suis kriss CLOTILDE, développeur en reconversion.</br> Je suis disponible pour une mission en java ou
+    <div class="bouge presentation">
+
+        <p>Je suis kriss CLOTILDE, développeur en reconversion.</br> Je suis disponible pour une mission en java
+            ou
             javascript.</br> J'aime le craft et les bonnes pratiques de programmations.<br>
         </p>
     </div>
-    <div class="bouge lion">
-        <a target="_blank"
-           href="https://krissclotilde.com/wp-content/uploads/2021/03/CV_2020-12-10_Kriss_CLOTILDE_DeveloppeurFullstack.pdf">Cliquer
-            -->CV</a>
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"><img id="imgLion"
-                                                                                                 src="./asset/lion.png"
-                                                                                                 alt="mon cv gardé par mon avatar"/>
-        </div>
+
 
     </div>
 
 
     <section class="center " id="quiSuisje">
+        <div class="container">
+            <h3>Change color</h3>
+            <div>
+                <label for="fondHtml"><h2>Coleur de fond</h2></label>
+                <input onchange="fondchange(this.value)" id="fondHtml" type="color" value="#000000"/>
+            </div>
+            <div>
+                <label for="textfond"><h2>Coleur du text</h2></label>
+                <input onchange="textchange(this.value)" id="textfond" type="color" value="#000000"/>
+            </div>
+            <div>
+                <label for="textfond"><h2>Coleur du titre</h2></label>
+                <input onchange="titrechange(this.value)" id="titrefondfond" type="color" value="#000000"/>
+            </div>
+        </div>
         <h1 id="titre_Text">Développeur Fullstack</h1>
         <h2 id="prenom_Text">kriss clotilde</h2>
         <a target="_blank" href="https://www.linkedin.com/in/kriss-clotilde/">
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="bouge avatar ">
+            <div class="bouge avatar ">
                 <img
                         src="./asset/avatar-gratuit.png"/></div>
         </a>
@@ -181,14 +196,8 @@
         </style>
 
         <section id="PorteFolio">
-            <div>
-                <h3 class="center projeth3" id="projet">Projets</h3>
-                <button onclick="toggleAffiche()" class="btn-31">
-                <span class="text-container">
-                     <span class="text">Afficher la description</span>
-                 </span>
-                </button>
-            </div>
+
+            <h3 class="center projeth3" id="projet">Projets</h3>
         </section>
     </section>
 
@@ -204,7 +213,8 @@
                 <div class="bouge bateau">
                     <img style="border-radius: 50%" src="./asset/mer2.png"/>
 
-                    <p class="affiche">j'ai créé un site de jeu en réseau de bataille navale avec express js pour créer
+                    <p class="affiche">J'ai créé un site de jeu en réseau de bataille navale avec express js pour
+                        créer
                         mon api et jquery pour
                         le
                         front ainsi que mysql comme base de donnée. J'ai hébergé le tout sur O2switch</p>
@@ -237,7 +247,7 @@
         <a target="_blank" href="https://github.com/lion92/Airbabouche/">
             <div id="projet3">
                 <div class="java">
-                    <h3>Compagnie aérienne</h3>
+                    <h3 class="titre">Compagnie aérienne</h3>
                 </div>
                 <div class="bouge wordpress">
                     <img src="./asset/java2.png" alt="projet java kriss"/>
@@ -268,6 +278,43 @@
         </a>
     </div>
 
+
+    <div class="container_sixtenaire">
+        <h2>Kata</h2>
+        <a target="_blank" href="https://github.com/lion92/kata_tondeuse_v1_kriss">
+            <div id="projet5">
+
+                <div class="titre">
+                    <h3>Tondeuse</h3>
+                </div>
+                <div class="bouge bateau">
+                    <img src="./asset/tondeuse.png">
+
+                    <p class="affiche">J'ai fait un kata tondeuse pour un entretien voici le code.
+                        Il s'agit de faire bouger séquentiellement plusieurs tondeuses sur une pelouse.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="container_septtenaire">
+        <h2>Kata</h2>
+        <a target="_blank" href="https://github.com/lion92/marsRoverVersion3">
+            <div id="projet6">
+
+                <div class="titre">
+                    <h3>Mars Rover</h3>
+                </div>
+                <div class="bouge bateau">
+                    <img src="./asset/mars.png">
+
+                    <p class="affiche">J'ai fait un kata Mars Rover pour un entretien voici le code.
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+
 </main>
 
 <div id="cv" class="top-bar ">
@@ -279,9 +326,51 @@
     </div>
 
 </div>
+<div class="container">
+    <div class="timeline">
+        <div class="timeline-object complete">
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+                <h3>Professeur contractuel science de laboratoire au lycée</h3>
+                <span>2015-2016</span>
+            </div>
+        </div>
+
+        <div class="timeline-object complete">
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+                <h3>Développeur java DSI</h3>
+                <span>2018-2019</span>
+            </div>
+        </div>
+
+        <div class="timeline-object complete">
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+                <h3>Developpeur java Arkance systems</h3>
+                <span>2019-2020</span>
+            </div>
+        </div>
+        <div class="timeline-object complete">
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+                <h3>Developpeur Node Js /Jest Ideta</h3>
+                <span>2021</span>
+            </div>
+        </div>
+        <div class="timeline-object">
+            <div class="timeline-status"></div>
+            <div class="timeline-content">
+                <h3>Software Craftsman/Dveloppeur FullStack Arolla</h3>
+                <span>2022</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container_principal">
     <section class="comp competence_section">
-        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="competence ">
+        <div class="competence ">
             <h2>Compétences</h2>
             <span>Java 70%</span>
             <progress class="java" max="100" value="70"></progress>
@@ -304,7 +393,7 @@
             <progress class="javascript" max="100" value="40"></progress>
         </div>
     </section>
-    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="loisir competence ">
+    <section class="loisir competence ">
         <h2>Loisirs</h2>
         <article class="bouge ">
             <p>Je joue aux cartes magic. C'est un jeu de carte à collectionner et à jouer. </p><img
@@ -328,24 +417,16 @@
         <label for="subject">Message</label>
         <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
         <script type="text/javascript">
-
-
-            function toggleAffiche() {
-                for (let elementsByClassNameElement of document.getElementsByClassName("affiche")) {
-                    elementsByClassNameElement.classList.toggle("afficheYes");
-                }
-            }
-
             emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
-            function validMail(mail)
-            {
+
+            function validMail(mail) {
                 return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(mail);
             }
 
             function sendmail() {
-                if(!validMail(document.getElementById("emailAddress").value)){
+                if (!validMail(document.getElementById("emailAddress").value)) {
                     alert("Email Invalid")
-                }else {
+                } else {
                     let temparams = {
                         from_name: document.getElementById("emailAddress").value,
                         to_name: "site kriss",
@@ -371,6 +452,8 @@
     &nbsp; kriss clotilde
     <a href="https://github.com/lion92" alt="Git hub de kriss">GitHub de kriss</a>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
 <script>
     var typed = new Typed('#typed', {
         strings: ["Curieux", "Passionné", "Agile"],
@@ -380,8 +463,13 @@
         showCursor: true
 
     })
+    //Aniamtion debut
+    gsap.timeline(gsap.from("div", {duration: 1.5, y: "+=500", opacity: 0, stagger: 0.1}));
 
 </script>
+
+
+<script src="js/counter.js"></script>
 <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 <script src="js/main.js"></script>
 <script src="three.min.js"></script>
@@ -402,3 +490,21 @@ document.getElementById("prenom_Text").innerHTML = context.prenom + " " + contex
 </script>
 
 </html>
+<script type="text/javascript">function fondchange(c) {
+    document.body.style.backgroundColor = "" + c;
+}
+</script>
+<script type="text/javascript">function textchange(c) {
+
+    document.querySelectorAll("p").forEach(el => {el.style.color = "" + c});
+}
+</script>
+<script type="text/javascript">function titrechange(c) {
+    document.querySelectorAll("h1").forEach(el=>{
+    el.style.color = "" + c;
+    })
+    document.querySelectorAll("h2").forEach(el=>{
+        el.style.color = "" + c;
+    })
+}
+</script>
