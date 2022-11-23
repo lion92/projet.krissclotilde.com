@@ -666,3 +666,10 @@ select {
 a:hover{
    background-color: #ffc800;
 }
+
+html{
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: black;
+    z-index: -30;
+}
