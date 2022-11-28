@@ -5,7 +5,36 @@
     <meta charset="utf-8">
     <link rel="icon" href="asset/avatar-gratuit.png"/>
     <title>Portfolio kriss</title>
+    <style>
+        .loading-gif {
+            max-width: 500px;
+        }
 
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /** make sure this is the highest value compared to all other divs **/
+            top: 0;
+            left: 0;
+            background: #191f26;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pre-loader.hidden {
+            animation: fadeOut 3s; /** change to 1s */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +82,10 @@
 </script>
 
 <body>
-
+<p>Page content</p>
+<div class='pre-loader'>
+    <img style="height: 50%" class='loading-gif' alt='loading' src="./asset/avatar-gratuit.png"/>
+</div>
 <div id="fond"></div>
 <div id="headham">
     <div onclick="toggleel()" id="divham"><i class="fas fa-bars"></i></div>
@@ -233,7 +265,7 @@
                     <h3>Site de kriss de type CV</h3>
                 </div>
 
-                <div class="bouge wordpress">
+                <div class="wordpress">
                     <img src="./asset/Lion%20Mascot%20Logo.png" alt="projet wordpress kriss"/>
 
                     <p class="affiche"> J'ai créé mon site internet</p>
@@ -477,8 +509,6 @@
         showCursor: true
 
     })
-    //Aniamtion debut
-    gsap.timeline(gsap.from("div", {duration: 1.5, y: "+=500", opacity: 0, stagger: 0.1}));
 
 </script>
 
@@ -492,6 +522,11 @@
 </div>
 <script src="app.js"></script>
 <script src="mail.js"></script>
+<script type='text/javascript'>
+    window.addEventListener('load', function () {
+        document.querySelector('.pre-loader').className += ' hidden';
+    });
+</script>
 </body>
 
 <script>const context = {titre: "Développeur FullStack", prenom: "kriss", nom: "CLOTILDE"}
