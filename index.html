@@ -15,7 +15,7 @@
             z-index: 100; /** make sure this is the highest value compared to all other divs **/
             top: 0;
             left: 0;
-            background: #191f26;
+            background: #0a0a0a;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,7 +24,7 @@
         }
 
         .pre-loader.hidden {
-            animation: fadeOut 3s; /** change to 1s */
+            animation: fadeOut 2s; /** change to 1s */
             animation-fill-mode: forwards;
         }
 
@@ -84,7 +84,7 @@
 <body>
 <p>Page content</p>
 <div class='pre-loader'>
-    <img style="height: 50%" class='loading-gif' alt='loading' src="./asset/avatar-gratuit.png"/>
+    <img style="height:100px; width:100px" class='loading-gif' alt='loading' src="./asset/avatar-gratuit.png"/>
 </div>
 <div id="fond"></div>
 <div id="headham">
