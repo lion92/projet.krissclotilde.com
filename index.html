@@ -23,8 +23,9 @@
             width: 100%;
         }
 
+        /**animation loader **/
         .pre-loader.hidden {
-            animation: fadeOut 2s; /** change to 1s */
+            animation: fadeOut 1s; /** change to 1s */
             animation-fill-mode: forwards;
         }
 
@@ -46,9 +47,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
 
 
-    (function () {
-    emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
-    })();
+        (function () {
+            emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
+        })();
     </script>
 
 
@@ -346,7 +347,9 @@
 </main>
 
 <div id="cv" class="top-bar ">
-    <div><a style="width: 50px; height:50px; font-size: 2em; color: #fa2222" href="docs/kriss_linkdin.pdf"><button>-->CV</button></a></div>
+    <div><a style="width: 50px; height:50px; font-size: 2em; color: #fa2222" href="docs/kriss_linkdin.pdf">
+        <button>-->CV</button>
+    </a></div>
     <span class="page-info">
       <span style="display:none" id="page-num"></span> <span style="display:none" id="page-count"></span>
     </span>
@@ -429,7 +432,10 @@
             <h2>Ma chaine you tube:</h2>
             <div id="page">
                 <div class="video-container">
-                    <iframe width="200" height="400" src="https://www.youtube.com/embed/2kX6EpdvGqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="200" height="400" src="https://www.youtube.com/embed/2kX6EpdvGqQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
             </div>
         </article>
@@ -438,8 +444,9 @@
             <p>Je joue aux cartes magic. C'est un jeu de carte à collectionner
                 <br>et à jouer. </p>
 
-            <img style="margin-top: 50px; opacity: 50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57sQXT0HaNbqW0THZWdBcTsI8D950g6YDgw&usqp=CAU"
-                alt="">
+            <img style="margin-top: 50px; opacity: 50%"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57sQXT0HaNbqW0THZWdBcTsI8D950g6YDgw&usqp=CAU"
+                 alt="">
         </article>
         <article class="bouge ">
             <h2>Le jeu de go</h2>
@@ -483,7 +490,7 @@
             }
 
         </script>
-        <button id="buttonMail"onclick="sendmail()">Envoyer</button>
+        <button id="buttonMail" onclick="sendmail()">Envoyer</button>
 
     </div>
 </div>
@@ -540,14 +547,16 @@ document.getElementById("prenom_Text").innerHTML = context.prenom + " " + contex
 </script>
 <script type="text/javascript">function textchange(c) {
 
-    document.querySelectorAll("p").forEach(el => {el.style.color = "" + c});
+    document.querySelectorAll("p").forEach(el => {
+        el.style.color = "" + c
+    });
 }
 </script>
 <script type="text/javascript">function titrechange(c) {
-    document.querySelectorAll("h1").forEach(el=>{
-    el.style.color = "" + c;
+    document.querySelectorAll("h1").forEach(el => {
+        el.style.color = "" + c;
     })
-    document.querySelectorAll("h2").forEach(el=>{
+    document.querySelectorAll("h2").forEach(el => {
         el.style.color = "" + c;
     })
 }

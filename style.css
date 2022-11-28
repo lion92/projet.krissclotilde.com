@@ -191,9 +191,6 @@ header {
     font-family: "Comic Sans MS";
 }
 
-button:hover {
-    background-color: lightblue;
-}
 
 canvas {
     height: 100%;
@@ -317,9 +314,6 @@ header {
     font-family: 'Luckiest Guy', cursive;
 }
 
-li a:hover {
-    background-color: #ffc800;
-}
 
 @media screen and (max-device-width: 400px), screen and (max-width: 1000px) {
     footer {
@@ -392,9 +386,6 @@ li a:hover {
         font-size: 2em;
     }
 
-    .lion a:hover {
-        background-color: #ffc800;
-    }
 
     .container_principal {
         display: flex;
@@ -436,9 +427,6 @@ li a:hover {
         font-size: 1em;
     }
 
-    li a:hover {
-        background-color: #ffc800;
-    }
 
     .lion a {
         color: white;
@@ -667,6 +655,24 @@ select {
     color: #1d6ebf;
     background: #E1E1DF;
 }
-a:hover{
-   background-color: #ffc800;
+
+
+
+
+button{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color: #0a0a0a;
+    text-align:center;
+    transition: all 0.2s;
+}
+button:hover a:hover{
+    background-color: #ffffff;
 }
