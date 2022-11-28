@@ -43,8 +43,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
 
 
@@ -82,16 +80,16 @@
 </script>
 
 <body>
-<p>Page content</p>
 <div class='pre-loader'>
     <img style="height:100px; width:100px" class='loading-gif' alt='loading' src="./asset/avatar-gratuit.png"/>
 </div>
 <div id="fond"></div>
+<H3 id="counter"></H3>
 <div id="headham">
     <div onclick="toggleel()" id="divham"><i class="fas fa-bars"></i></div>
     <header id="head" class="hidep" class="center">
         <h1 class="titreDefil">Qualité : <span style="color: black" id="typed"></span></h1>
-        <H2 id="counter"></H2>
+
         <nav>
             <ul>
                 <li class="bouge"><a href="#accueil">Accueil</a></li>
@@ -100,7 +98,7 @@
                 <li class="bouge"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div style="opacity: 0">
+        <div style="display: none">
             <label for="vitesse">Vitesse</label>
             <div class="center"><select id="vitesse">
                 <option value="0.007">lent</option>
@@ -351,7 +349,7 @@
 </main>
 
 <div id="cv" class="top-bar ">
-    <div><a style="width: 50px; height:50px; font-size: 2em; color: #fa2222" href="docs/kriss_linkdin.pdf">-->CV</a></div>
+    <div><a style="width: 50px; height:50px; font-size: 2em; color: #fa2222" href="docs/kriss_linkdin.pdf"><button>-->CV</button></a></div>
     <span class="page-info">
       <span style="display:none" id="page-num"></span> <span style="display:none" id="page-count"></span>
     </span>
@@ -488,7 +486,7 @@
             }
 
         </script>
-        <button onclick="sendmail()">Envoyer</button>
+        <button id="buttonMail"onclick="sendmail()">Envoyer</button>
 
     </div>
 </div>

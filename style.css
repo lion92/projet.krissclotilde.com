@@ -310,6 +310,7 @@ footer {
 }
 
 header {
+    height: 100%;
     font-size: 3em;
     font-family: 'Luckiest Guy', cursive;
 }
@@ -443,6 +444,7 @@ li a:hover {
 
     header {
         font-size: 2em;
+        height: 100%;
     }
 }
 
