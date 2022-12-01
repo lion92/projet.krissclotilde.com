@@ -9,7 +9,10 @@
     text-decoration: none;
     list-style: none;
 }
-
+html{
+    margin-left: 2em;
+    margin-right: 2em;
+}
 .titre {
     margin-bottom: 0.5em;
 }
