@@ -615,7 +615,7 @@ span {
 }
 
 #FormContact {
-    color: dodgerblue;
+    color: #ffffff;
     max-width: 30em;
 }
 
@@ -707,4 +707,16 @@ button{
 }
 button:hover a:hover{
     background-color: #ffffff;
+}
+.emailDiv{
+    background-color: #54123a;
+}
+.emailDiv label{
+    color: white;
+}
+.emailDiv h1{
+    color: white;
+}
+.emailDiv:hover{
+    background-color: #bf95e8;
 }
