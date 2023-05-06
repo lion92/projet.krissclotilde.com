@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Calligraffitti', cursive;
+
+
 }
 html{
     margin-left: 2em;
@@ -318,12 +319,12 @@ article p {
 }
 
 .comp {
-    grid-column: 3;
+    grid-column: 2;
     font-size: 2em;
 }
 
 .loisir {
-    grid-column: 5;
+    grid-column: 6;
     font-size: 2em;
 }
 
@@ -729,4 +730,11 @@ button:hover a:hover{
 }
 .emailDiv:hover{
     background-color: #bf95e8;
+}
+button{
+ background-color: #1872d9;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: #96efe2;
 }
