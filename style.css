@@ -166,10 +166,17 @@ header ul li {
     text-align: center;
     margin-bottom: 2em;
 }
+.container_tache {
+
+    grid-column: 5;
+    grid-row: 6;
+    text-align: center;
+    margin-bottom: 2em;
+}
 
 footer {
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 7;
     margin: 1rem;
     padding: 1rem;
     color: white;
@@ -183,7 +190,7 @@ header {
     border-bottom: 0.1em solid black;
 }
 
-#projet1, #projet2, #projet3, #projet4, #projet5, #projet6 {
+#projet1, #projet2, #projet3, #projet4, #projet5, #projet6,#gestionTache {
     width: 20em;
     color: #fa2222;
     border: 1rem solid #0a0a0a;
