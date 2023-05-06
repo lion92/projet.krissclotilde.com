@@ -738,3 +738,8 @@ button{
     text-align: center;
     border: #96efe2;
 }
+main{
+    background-color: #0a0a0a;
+    border: lightblue;
+    opacity: 0.7;
+}
