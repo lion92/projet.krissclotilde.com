@@ -169,7 +169,7 @@ header ul li {
 }
 .container_tache {
 
-    grid-column: 5;
+    grid-column: 4;
     grid-row: 6;
     text-align: center;
     margin-bottom: 2em;
@@ -720,7 +720,7 @@ button:hover a:hover{
     background-color: #ffffff;
 }
 .emailDiv{
-    background-color: #54123a;
+    background-color: #cbd3c3;
 }
 .emailDiv label{
     color: white;
@@ -729,10 +729,12 @@ button:hover a:hover{
     color: white;
 }
 .emailDiv:hover{
-    background-color: #bf95e8;
+    background-color: #918e96;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 button{
- background-color: #1872d9;
+ background-color: #97ac93;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -742,4 +744,12 @@ main{
     background-color: #0a0a0a;
     border: lightblue;
     opacity: 0.7;
+    transition-property: background-color;
+    animation-duration: 3s;
 }
+button:hover{
+    background-color: #0fef0f;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
