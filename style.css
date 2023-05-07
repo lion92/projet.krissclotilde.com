@@ -58,6 +58,7 @@ header ul {
 }
 
 header {
+
     grid-column: 4;
     font-size: 2rem;
     background-color: white;
@@ -85,14 +86,14 @@ img {
 
 #headham {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
     margin-top: 1em;
+    position: fixed;
+    width: 90vw;
+    z-index: 100000;
+
 }
 
 #headham div {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 1;
 }
 
 header {
@@ -753,3 +754,6 @@ button:hover{
     transition-duration: 1s;
 }
 
+#divham{
+    position: fixed;
+}
