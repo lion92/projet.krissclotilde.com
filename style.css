@@ -764,13 +764,13 @@ button:hover{
 
 @keyframes visible {
     0%{
-        opacity: 0;
+
         background-color: #191918;
 
 
     }
     100% {
-        opacity: 1;
+
    background-color: #1f1919;
     }
 }
