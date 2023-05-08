@@ -757,26 +757,20 @@ button:hover{
 #divham{
     position: fixed;
 }
+ html, main, div, p, h1, h2{
 
-main {
-    animation: visible 3s; /** change to 1s */;
+    animation: visible 4s; /** change to 1s */;
 }
 
 @keyframes visible {
     0%{
-        background-color: #f5f4ec;
-        width: 10%;
-    }
-    25%{
-        background-color: #8d952d;
-        width: 25%;
-    }
-    50%{
-        background-color: #4b4943;
-        widt:50%;
+        opacity: 0;
+        background-color: #191918;
+
+
     }
     100% {
-        width: 100%;
-   background-color: #0a0a0a;
+        opacity: 1;
+   background-color: #1f1919;
     }
 }
