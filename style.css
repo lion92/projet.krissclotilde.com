@@ -10,6 +10,7 @@
 
 
 }
+
 html{
     margin-left: 2em;
     margin-right: 2em;
@@ -342,10 +343,12 @@ article p {
 }
 
 header, h1, h2, h3, button, .projeth3 {
-    font-size: 1em;
+    font-size: 1.75em;
     text-align: center;
 }
-
+h3{
+    font-size: 2.5em;
+}
 footer {
     font-size: 2em;
 }
@@ -723,7 +726,7 @@ button:hover a:hover{
     background-color: #ffffff;
 }
 .emailDiv{
-    background-color: #cbd3c3;
+    background-color: #353734;
 }
 .emailDiv label{
     color: white;
