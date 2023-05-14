@@ -201,6 +201,8 @@ header {
     height: 100%;
     margin-bottom: 2em;
     font-family: "Comic Sans MS";
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #5f73ec, inset 0px -10px 27px -8px #ffffff, 28px 36px 50px 20px rgba(1,2,3,0.6);
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #4464b8, inset 0px -10px 27px -8px #d9cbcc, 28px 36px 50px 20px rgba(1,2,3,0.6);
 }
 
 
