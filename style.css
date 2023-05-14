@@ -195,9 +195,9 @@ header {
 #projet1, #projet2, #projet3, #projet4, #projet5, #projet6,#gestionTache {
     width: 20em;
     color: #fa2222;
-    border: 1rem solid #0a0a0a;
+    border: 10px solid #e4d3d3;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1em;
     height: 100%;
     margin-bottom: 2em;
     font-family: "Comic Sans MS";
@@ -304,7 +304,7 @@ article {
     width: 10em;
     text-align: center;
     border-radius: 10px;
-    border: 5px solid black;
+    border: 5px solid #ddd1d1;
     background-color: black;
     margin-right: 1em;
 }
@@ -368,7 +368,7 @@ header {
         font-size: 3em;
     }
 
-    #projet1, #projet2, #projet3, #projet4, #projet5, #projet6 {
+    #projet1, #projet2, #projet3, #projet4, #projet5, #projet6,#gestionTache {
         width: 400px;
         color: white;
         border: 1rem solid white;
@@ -735,7 +735,7 @@ button:hover a:hover{
     transition-duration: 1s;
 }
 button{
- background-color: #97ac93;
+ background-color: #495e5e;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
