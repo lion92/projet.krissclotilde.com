@@ -5,37 +5,6 @@
     <meta charset="utf-8">
     <link rel="icon" href="asset/avatar-gratuit.png"/>
     <title>Portfolio kriss</title>
-    <style>
-        .loading-gif {
-            max-width: 500px;
-        }
-
-        .pre-loader {
-            position: fixed;
-            z-index: 100; /** make sure this is the highest value compared to all other divs **/
-            top: 0;
-            left: 0;
-            background: #0a0a0a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-        }
-
-        /**animation loader **/
-        .pre-loader.hidden {
-            animation: fadeOut 3s; /** change to 1s */
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeOut {
-            100% {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-    </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +21,6 @@
         })();
     </script>
 
-
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -60,8 +28,40 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
+<style>
+    .loading-gif {
+        max-width: 500px;
+    }
 
-<script>function toggleel() {
+    .pre-loader {
+        position: fixed;
+        z-index: 100; /** make sure this is the highest value compared to all other divs **/
+        top: 0;
+        left: 0;
+        background: #0a0a0a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    /**animation loader **/
+    .pre-loader.hidden {
+        animation: fadeOut 3s; /** change to 1s */
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+</style>
+
+<script>
+        function toggleel() {
 
 
     if (document.querySelector("header").classList.contains("hide")) {
@@ -458,6 +458,11 @@
         <label for="subject">Message</label>
         <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
         <script type="text/javascript">
+
+            function hideheader(){
+                document.querySelector("header").classList.add("hide");
+            }
+            hideheader();
             emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
 
             function validMail(mail) {
