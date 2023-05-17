@@ -363,7 +363,49 @@ header {
     font-family: 'Luckiest Guy', cursive;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+}
 
+.card {
+    width: 300px;
+    color: #e099f1;
+    background: #2a0d48;
+    border: 1px solid #67438b;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s;
+    margin: 10px;
+    transform: scale(1);
+    border-radius: 10%;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-content {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-image {
+    max-width: 230px;
+}
 @media screen and (max-device-width: 400px), screen and (max-width: 1000px) {
     footer {
         font-size: 2em;
@@ -779,3 +821,8 @@ button:hover{
    background-color: #1f1919;
     }
 }
+.card-container div h3{
+    color: orchid;
+    font-size: 18px;
+}
+progress { accent-color: orchid;}

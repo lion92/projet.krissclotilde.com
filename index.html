@@ -61,29 +61,31 @@
 </style>
 
 <script>
-        function toggleel() {
+    function toggleel() {
 
 
-    if (document.querySelector("header").classList.contains("hide")) {
+        if (document.querySelector("header").classList.contains("hide")) {
 
-        document.querySelector("header").classList.remove("hide");
+            document.querySelector("header").classList.remove("hide");
 
-        document.querySelector("header").classList.add("show");
-        console.log("aaa")
-    } else {
-        console.log("bbb")
-        document.querySelector("header").classList.add("hide");
-        document.querySelector("header").classList.remove("show");
+            document.querySelector("header").classList.add("show");
+            console.log("aaa")
+        } else {
+            console.log("bbb")
+            document.querySelector("header").classList.add("hide");
+            document.querySelector("header").classList.remove("show");
+        }
+        document.querySelector("header").classList.remove("hidep");
+
     }
-    document.querySelector("header").classList.remove("hidep");
-
-}
 </script>
 
 <body>
 
 <div class='pre-loader'>
-    <div class="lds-circle loading-gif"><span>Chargement...</span><div></div></div>
+    <div class="lds-circle loading-gif"><span>Chargement...</span>
+        <div></div>
+    </div>
 
 </div>
 <div id="fond"></div>
@@ -119,7 +121,8 @@
         ou
         javascript.</br> J'aime le craft et les bonnes pratiques de programmations.<br>
     </p>
-    <p style="color:red; background-color: #cbd3c3">Je vise les étoiles pour au moins décrocher la lune.</p>
+    <p style="color:red;">Je vise les étoiles pour au moins décrocher la lune.</p>
+    <a style="color: #5f73ec" href="https://github.com/lion92" alt="Git hub de kriss">GitHub de kriss</a>
 </div>
 
 <main class="container_principal" id="accueil">
@@ -361,46 +364,31 @@
     </div>
 
 </div>
-<div class="container">
-    <div class="timeline">
-        <div class="timeline-object complete">
-            <div class="timeline-status"></div>
-            <div class="timeline-content">
-                <h3>Professeur contractuel science de laboratoire au lycée</h3>
-                <span>2015-2016</span>
-            </div>
-        </div>
-
-        <div class="timeline-object complete">
-            <div class="timeline-status"></div>
-            <div class="timeline-content">
-                <h3>Développeur java DSI</h3>
-                <span>2018-2019</span>
-            </div>
-        </div>
-
-        <div class="timeline-object complete">
-            <div class="timeline-status"></div>
-            <div class="timeline-content">
-                <h3>Developpeur java Arkance systems</h3>
-                <span>2019-2020</span>
-            </div>
-        </div>
-        <div class="timeline-object complete">
-            <div class="timeline-status"></div>
-            <div class="timeline-content">
-                <h3>Developpeur Node Js /Jest Ideta</h3>
-                <span>2021</span>
-            </div>
-        </div>
-        <div class="timeline-object">
-            <div class="timeline-status"></div>
-            <div class="timeline-content">
-                <h3>Software Craftsman/Développeur FullStack Arolla</h3>
-                <span>2022</span>
-            </div>
-        </div>
+<div class="card-container container" style="margin-top: 1em">
+    <div class="card">
+        <span>2015-2016</span>
+        <h3>Professeur contractuel science de laboratoire <br>au lycée</h3>
     </div>
+
+
+<div class="card">
+    <span>2018-2019</span>
+    <h3>Développeur java <br>DSI</h3>
+</div>
+<div class="card">
+    <span>2019-2020</span>
+    <h3>Developpeur java <br>Arkance systems</h3>
+</div>
+    <div class="card">
+    <span>2021</span>
+    <h3>Developpeur Node Js /Jest <br>Ideta</h3>
+    </div>
+    <div class="card">
+    <span>2022-Actuellement</span>
+        <h3>Software Craftsman/Développeur FullStack <br>Arolla</h3>
+    </div>
+
+
 </div>
 
 <div class="container_principal">
@@ -430,20 +418,18 @@
     </section>
     <section class="loisir competence ">
         <h2>Loisirs</h2>
-        <article class="bouge ">
-            <h2>Carte magic</h2>
+        <article class="card">
+
             <p>Je joue aux cartes magic. C'est un jeu de carte à collectionner
                 <br>et à jouer. </p>
-
-            <img style="margin-top: 50px; opacity: 50%"
-                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR57sQXT0HaNbqW0THZWdBcTsI8D950g6YDgw&usqp=CAU"
-                 alt="">
+            <h2>Carte magic</h2>
         </article>
-        <article class="bouge ">
-            <h2>Le jeu de go</h2>
-            <p>Je joue au jeu de go qui est un jeu de stratégie asiatique.</p><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRT7lQ5-Sg2jwmfmSvVmeeEWRBCNVQqX3aQ&usqp=CAU"
-                alt="">
+        <article class="card">
+            <div> <p>Je joue au jeu de go qui est un jeu de stratégie asiatique.</p>
+                <h2>Le jeu de go</h2>
+
+            </div>
+
         </article>
 
     </section>
@@ -459,9 +445,10 @@
         <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px" required></textarea>
         <script type="text/javascript">
 
-            function hideheader(){
+            function hideheader() {
                 document.querySelector("header").classList.add("hide");
             }
+
             hideheader();
             emailjs.init("user_MjcZd0ZaWwORBo8LF9olA");
 
@@ -482,7 +469,8 @@
                         alert("Message envoyé Merci!!");
                     });
 
-                } }
+                }
+            }
 
         </script>
         <button id="buttonMail" onclick="sendmail()">Envoyer</button>
