@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
 
@@ -534,6 +535,28 @@ document.getElementById("prenom_Text").innerHTML = context.prenom + " " + contex
         el.style.color = "" + c
     });
 }
+</script>
+<style>
+    img{
+        margin: 2em;
+        width: 6em;
+        height:6em;
+        overflow: hidden;
+    }
+</style>
+<script>
+
+    let images = document.querySelectorAll('img');
+    for (let image of images) {
+        new simpleParallax(image, {
+            scale: 1.7,
+            orientation: 'left',
+            delay: 1,
+            transition: 'cubic-bezier(0,0,0,1)',
+            duration: 2
+        });
+    }
+
 </script>
 <script type="text/javascript">function titrechange(c) {
     document.querySelectorAll("h1").forEach(el => {
