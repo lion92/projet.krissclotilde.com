@@ -191,8 +191,6 @@ header {
 #projet1, #projet2, #projet3, #projet4, #projet5, #projet6,#gestionTache {
     width: 20em;
     color: #fa2222;
-    border: 10px solid #e4d3d3;
-    border-radius: 1rem;
     padding: 1em;
     height: 100%;
     margin-bottom: 2em;
@@ -211,7 +209,6 @@ header {
     width: 64px;
     height: 64px;
     margin: 8px;
-    border-radius: 50%;
     background: #e7565b;
     animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
@@ -412,8 +409,6 @@ header {
     #projet1, #projet2, #projet3, #projet4, #projet5, #projet6,#gestionTache {
         width: 400px;
         color: white;
-        border: 1rem solid white;
-        border-radius: 1em;
         padding: 1em;
         margin-bottom: 2em;
         height: 100%;
@@ -830,6 +825,7 @@ p{
     text-align: center;
 }
 a{
-    font-size: 25px;
+    text-align: center;
+    font-size: 20px;
 }
 progress { accent-color: orchid;}
