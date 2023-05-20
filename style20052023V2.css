@@ -20,7 +20,7 @@ html{
 }
 
 .afficheButton {
-    font-size: 1em;
+    font-size: 4em;
     font-family: 'Martel Sans', sans-serif;
 }
 
@@ -829,3 +829,6 @@ a{
     font-size: 20px;
 }
 progress { accent-color: orchid;}
+button{
+   margin: 1em;
+}
