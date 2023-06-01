@@ -789,14 +789,14 @@ button:hover{
 }
 
 #divham{
-    position: fixed;
+    position: relative;
 }
  html, main, div, p, h1, h2{
 
     animation: visible 4s; /** change to 1s */;
 }
 .card-container div h3{
-    color: orchid;
+    color: #2f6187;
     font-size: 18px;
 }
 h3,h1,h2,h4{
@@ -811,7 +811,46 @@ a{
     text-align: center;
     font-size: 20px;
 }
-progress { accent-color: orchid;}
+progress { accent-color: #7089da;}
 button{
    margin: 1em;
+}
+
+
+
+marquee {
+    margin: 0 auto;
+    text-align:center;
+}
+
+h1, h2, h3, p {
+    color: #3f79ed;
+    text-align: center;
+}
+
+h1 {
+    font-size:1em;
+
+}
+
+h2 {
+    font-variant:small-caps;
+}
+
+.scrollingtext {
+    font-family:"Franklin Gothic";
+    font-size:2em;
+    line-height:1em;
+    text-align: center;
+    color: #526bf8;
+    margin: auto;
+    position: absolute;
+    animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+    0% {  	  transform: perspective(10px) rotateX(1deg);
+    }
+    100% { transform: perspective(10px) rotateX(1deg);
+    }
 }
