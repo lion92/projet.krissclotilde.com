@@ -196,8 +196,6 @@ header {
     height: 100%;
     margin-bottom: 2em;
     font-family: "Comic Sans MS";
-    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #5f73ec, inset 0px -10px 27px -8px #ffffff, 28px 36px 50px 20px rgba(1,2,3,0.6);
-    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #4464b8, inset 0px -10px 27px -8px #d9cbcc, 28px 36px 50px 20px rgba(1,2,3,0.6);
 }
 
 
@@ -300,7 +298,6 @@ article {
     width: 10em;
     text-align: center;
     border-radius: 10px;
-    border: 5px solid #ddd1d1;
     background-color: black;
     margin-right: 1em;
 }
@@ -363,8 +360,6 @@ header {
 .card {
     width: 300px;
     color: #e099f1;
-    background: #2a0d48;
-    border: 1px solid #67438b;
     padding: 0.6em;
     display: flex;
     flex-direction: column;
@@ -530,7 +525,6 @@ body {
 input[type="text"], textarea, input[type="email"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -713,7 +707,6 @@ select {
 
 .timeline-object:not(.complete) .timeline-status {
     background: #ffffff;
-    border: 4px solid #C5C5C5;
 }
 
 .timeline-content {
