@@ -127,6 +127,12 @@ header ul li {
     text-align: center;
     margin-bottom: 2em;
 }
+.container_tertiaire1 {
+    grid-column: 4;
+    grid-row: 8;
+    text-align: center;
+    margin-bottom: 2em;
+}
 
 .container_quaternaire {
     grid-column: 3;
